@@ -1,5 +1,5 @@
 import "./Registration.css"; // Importa il file CSS
-
+import { test } from "../actions";
 export default function Registration({ params }) {
 
     const ruolo = params.userType;

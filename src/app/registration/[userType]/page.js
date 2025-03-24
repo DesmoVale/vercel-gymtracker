@@ -2,6 +2,7 @@
 
 import { useState, use } from "react";
 import "./Registration.css"; // Importa il file CSS
+import { registrazioneUtente } from "@/app/actions";
 
 export default function Registration({ params }) {
 

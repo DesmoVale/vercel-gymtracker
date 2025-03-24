@@ -27,6 +27,7 @@ export default function Registration({ params }) {
         
         // Mostra il messaggio di successo
         setMessage(result.message);
+        alert(message);
       } catch (error) {
         setMessage(error.message);  // Mostra l'errore
       }

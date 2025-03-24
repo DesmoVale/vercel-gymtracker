@@ -1,0 +1,206 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0; /* Aggiungi questa regola per eliminare margini indesiderati */
+  }
+  
+  /* Home Container */
+  #home-container {
+    display: flex;
+    width: 100vw;  /* Imposta la larghezza per occupare l'intero schermo */
+    min-height: 100vh; /* Assicurati che il contenitore occupi tutta l'altezza dello schermo */
+    background: white;
+    color: black;
+  }
+  
+  /* Left Side - Background Black */
+  .left-side {
+    flex: 1;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Right Side - Background White */
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: white;
+  }
+  
+  /* Title and Subtitle */
+  .site-title {
+    font-size: 48px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Login Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Form width */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #000;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  /* Register Section */
+  .register-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .register-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .register-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .register-buttons button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    #home-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+  
+    .left-side, .right-side {
+        width: 100%;
+        padding: 20px;
+    }
+  
+    .site-title {
+        font-size: 36px;
+    }
+  
+    .subtitle {
+        font-size: 18px;
+    }
+  
+    .login-form h2 {
+        font-size: 20px;
+    }
+  
+    input {
+        padding: 12px;
+        font-size: 14px;
+    }
+  
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+  }
+  
